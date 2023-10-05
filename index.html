@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Registration Media Course</h1>
+        <nav>
+            <ul>
+                <li><a href="https://laptopmerah.github.io/Web-Course/" target="_blank">Home</a></li>
+                <li><a href="">Regist</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form name="regist" method="POST" onsubmit="return basicValidation()">
+            <div class="form-item">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Full Name" pattern="[A-Za-z\s]+" />
+            </div>
+            <div class="form-item">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" onkeyup="emailCheck()" placeholder="example@gmail.com" />
+            </div>
+            <div class="form-item">
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass" placeholder="Password" />
+            </div>
+            <div class="form-item">
+                <label for="vPass">Verify Password</label>
+                <input type="password" id="vPass" name="vPass" onkeyup="passCheck()" placeholder="Password" />
+            </div>
+            <div class="form-item">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" cols="30" placeholder="Address"></textarea>
+            </div>
+            <div class="form-item">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" onkeyup="phoneCheck()" placeholder="+62987654321" />
+            </div>
+            <div class="form-item">
+                <label for="date">Date of Birth</label>
+                <input type="date" id="date" name="date" />
+            </div>
+            <div class="form-item">
+                <span>Gender</span>
+                <div id="gender">
+                    <div class="right">
+                        <label class="button">
+                            <input name="gender" value="Male" type="radio" />
+                            <span>Male</span>
+                        </label>
+                        <label class="button">
+                            <input name="gender" value="Female" type="radio" />
+                            <span>Female</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-item">
+                <label for="topic">Select Course</label>
+                <select name="topic">
+                    <option name="topic">Journalistic</option>
+                    <option name="topic">Photography</option>
+                    <option name="topic">Videography</option>
+                    <option name="topic">Social media</option>
+                    <option name="topic">Graphic design</option>
+                    <option name="topic">Website</option>
+                </select>
+            </div>
+            <div class="form-item submit">
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&#169; 2023 Iqbal Ramadhan</p>
+    </footer>
+</body>
+</html>

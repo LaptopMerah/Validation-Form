@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Assets/Classes.png);
+    background-position: center;
+    background-size: cover;
+    color:whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    text-align: center;
+}
+header>h1{
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+nav ul{
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+    list-style: none;
+    margin: 20px;
+}
+
+nav a{
+    padding: 0.3em 1em;
+    background-color: rgba(70, 106, 151, 0.25);
+    border-radius: 5px;
+    color: whitesmoke;
+
+    text-decoration: none;
+}
+nav li a:hover{
+    padding: 0.3em 1em;
+    background-color: #C8E0CA;
+    color: black;
+}
+
+main{
+    width: 50%;
+    margin:auto;
+    background-color: rgb(247, 179, 24, 0.8);
+    padding: 3em;
+    border: 2px solid #cf9204;
+    border-radius: 20px;
+}
+
+.form-item {
+    margin-bottom: 1em;
+}
+
+.form-item label {
+    display: inline-block;
+    width: 100%;
+}
+
+.form-item input {
+    width: 100%;
+    padding-left: 10px;
+    color: whitesmoke;
+}
+
+.form-item textarea{
+    padding-left: 10px;
+    color: whitesmoke;
+}
+.form-item select {
+    padding-left: 10px;
+    width: 100%;
+    color: whitesmoke;
+}
+
+.form-radio input {
+    display: inline-block;
+    width: 10px;    
+    
+}
+
+.button {
+    border: 1px solid #4c5b6d;
+    overflow: auto;
+}
+
+#gender {
+    display: inline;
+}
+
+#gender label {
+    width: 20%;
+    border: 1px solid #4c5b6d;
+    overflow: auto;
+}
+
+#gender label span {
+    text-align: center;
+    padding: 0.2em;
+    display: block;
+}
+
+#gender label input {
+    position: absolute;
+    top: -80px;
+    left: -200px;
+}
+
+#gender input:checked+span {
+    background-color: #466a97;
+    color: #f7f7f7;
+}
+
+#gender .button {
+    background: rgba(22, 33, 47, 0.5);    border: 1px solid #4c5b6d;
+}
+
+input {
+    background: rgba(22, 33, 47, 0.5);
+    border: 1px solid #4c5b6d;
+    min-height: 25px;
+}
+
+textarea {
+    background: rgba(22, 33, 47, 0.5);
+    border: 1px solid #4c5b6d;
+    min-width: 100%;
+    min-height: 50px;
+}
+select {
+    background: rgba(22, 33, 47, 0.5);
+        border: 1px solid #4c5b6d;
+    min-height: 25px;
+}
+
+
+
+input:focus {
+    background: rgba(70, 106, 151, 0.25);
+}
+textarea:focus {
+    background: rgba(70, 106, 151, 0.25);
+}
+
+select:focus{
+    background: rgba(70, 106, 151, 0.25);
+    color: black;
+}
+
+.submit input:hover{
+    background-color: whitesmoke;
+    opacity: 0.8;
+    color: black;
+}
+footer {
+    padding: 15px;
+    color: rgb(5, 59, 80);
+    background-color: #EEEEEE;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+}
